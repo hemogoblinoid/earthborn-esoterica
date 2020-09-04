@@ -1,0 +1,9 @@
+[user]
+    name = hemogoblinoid
+    email = hemogoblinmail@gmail.com
+[core]
+    editior = code --wait
+[diff]
+    tool = default-difftool
+[difftool "default-difftool"]
+    cmd = code --wait --diff $LOCAL $REMOTE
