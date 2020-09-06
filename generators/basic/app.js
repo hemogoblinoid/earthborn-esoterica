@@ -48,6 +48,46 @@ const plainsAnimals = [
   { quantity: 1, dice: 20, mod: 20, description: "migratory reindeer" },
 ];
 
+const plainsWeird = [
+  { quantity: 1, dice: 4, mod: 1, description: "mycelids" },
+  { quantity: 2, dice: 4, mod: 0, description: "giant vermin (roll table 92)" },
+  {
+    quantity: 1,
+    dice: 4,
+    mod: 0,
+    description: "vermin swarms and 1 walking swarm",
+  },
+  {
+    quantity: 1,
+    dice: 4,
+    mod: 0,
+    description: "vermin swarms and 1 vermin-brood mother",
+  },
+  { quantity: 1, dice: 1, mod: 0, description: "drake" },
+  {
+    quantity: 1,
+    dice: 4,
+    mod: 0,
+    description: "weak drake offspring and 1 drake mother",
+  },
+  { quantity: 1, dice: 1, mod: 0, description: "mated pair of drakes" },
+  { quantity: 1, dice: 1, mod: 0, description: "basilisk" },
+  { quantity: 1, dice: 6, mod: 1, description: "ghouls" },
+  { quantity: 1, dice: 4, mod: 1, description: "vargouilles" },
+  {
+    quantity: 1,
+    dice: 1,
+    mod: 0,
+    description: "strange feral undead (table 99)",
+  },
+  {
+    quantity: 1,
+    dice: 4,
+    mod: -1,
+    description: "mammoths and 1 undead flesh hulk",
+  },
+];
+
 const forestAnimals = [
   { quantity: 2, dice: 6, mod: 0, description: "deer (reindeer stats" },
   { quantity: 2, dice: 4, mod: 0, description: "boars" },
@@ -69,6 +109,36 @@ const forestAnimals = [
   { quantity: 2, dice: 10, mod: 0, description: "bats" },
   { quantity: 1, dice: 1, mod: 0, description: "megatherium" },
   { quantity: 3, dice: 10, mod: 0, description: "antelope (reindeer stats)" },
+];
+
+const forestsWeird = [
+  { quantity: 1, dice: 1, mod: 0, description: "huge carnivirous plant" },
+  { quantity: 1, dice: 4, mod: 1, description: "carnivorous plants" },
+  { quantity: 2, dice: 4, mod: 0, description: "giant spiders and their webs" },
+  {
+    quantity: 1,
+    dice: 4,
+    mod: 0,
+    description: "spider offspring and their spider brood-mother",
+  },
+  { quantity: 1, dice: 1, mod: 0, description: "giant vermin (table 92)" },
+  { quantity: 1, dice: 1, mod: 0, description: "ooze" },
+  { quantity: 1, dice: 1, mod: 0, description: "drake" },
+  {
+    quantity: 1,
+    dice: 4,
+    mod: 0,
+    description: "mycelids and the plant-monster that made them",
+  },
+  { quantity: 1, dice: 6, mod: 1, description: "ghouls" },
+  { quantity: 1, dice: 1, mod: 0, description: "shambling compost-heap" },
+  { quantity: 1, dice: 1, mod: 0, description: "mimic" },
+  {
+    quantity: 1,
+    dice: 6,
+    mod: 0,
+    description: "strange feral undeads (table 99)",
+  },
 ];
 
 const wetlandAnimals = [
@@ -99,6 +169,26 @@ const wetlandAnimals = [
   { quantity: 3, dice: 10, mod: 0, description: "elk (reindeer stats)" },
 ];
 
+const wetlandsWeird = [
+  { quantity: 1, dice: 1, mod: 0, description: "plant monster" },
+  { quantity: 1, dice: 4, mod: 0, description: "aquatic vermin" },
+  { quantity: 1, dice: 4, mod: 1, description: "giant vermin" },
+  { quantity: 1, dice: 1, mod: 0, description: "shambling compost heap" },
+  { quantity: 1, dice: 1, mod: 0, description: "ooze" },
+  { quantity: 1, dice: 1, mod: 0, description: "giant amoeba" },
+  { quantity: 1, dice: 4, mod: 1, description: "bog mummies (table 91)" },
+  { quantity: 1, dice: 2, mod: 0, description: "hydras" },
+  { quantity: 1, dice: 1, mod: 0, description: "hyrda and its young" },
+  { quantity: 1, dice: 4, mod: 0, description: "mycelids" },
+  { quantity: 1, dice: 4, mod: 0, description: "mycelids spawns and an ooze" },
+  {
+    quantity: 1,
+    dice: 6,
+    mod: 0,
+    description: "strange feral undeads (table 99)",
+  },
+];
+
 const highlandAnimals = [
   { quantity: 2, dice: 6, mod: 0, description: "mammoths" },
   { quantity: 2, dice: 8, mod: 0, description: "goats (reindeer stats)" },
@@ -120,6 +210,42 @@ const highlandAnimals = [
   { quantity: 2, dice: 6, mod: 0, description: "antelopes" },
   { quantity: 1, dice: 1, mod: 0, description: "eagle (bird of prey stats)" },
   { quantity: 3, dice: 6, mod: 0, description: "bats" },
+];
+
+const highlandsWeird = [
+  { quantity: 1, dice: 1, mod: 0, description: "beast of snow and ice" },
+  { quantity: 1, dice: 4, mod: 0, description: "animated stones" },
+  {
+    quantity: 1,
+    dice: 4,
+    mod: 0,
+    description:
+      "animated tools and 1 magma beast within a crack in the ground",
+  },
+  { quantity: 1, dice: 4, mod: 0, description: "giant spiders and their webs" },
+  {
+    quantity: 1,
+    dice: 4,
+    mod: 0,
+    description: "skeletal slaves and 1 tomb guardian",
+  },
+  { quantity: 1, dice: 1, mod: 0, description: "drake" },
+  {
+    quantity: 1,
+    dice: 4,
+    mod: 0,
+    description: "drakes and d6 of young (viper stats)",
+  },
+  { quantity: 1, dice: 1, mod: 0, description: "baskilisk" },
+  { quantity: 1, dice: 1, mod: 0, description: "hyrda" },
+  { quantity: 1, dice: 1, mod: 0, description: "mimic" },
+  { quantity: 1, dice: 4, mod: 0, description: "angry fossils" },
+  {
+    quantity: 1,
+    dice: 6,
+    mod: 0,
+    description: "strange feral undeads (table 99)",
+  },
 ];
 
 const coastAnimals = [
@@ -150,6 +276,36 @@ const coastAnimals = [
   { quantity: 3, dice: 10, mod: 0, description: "elk (reindeer stats)" },
 ];
 
+const coastWeird = [
+  { quantity: 1, dice: 1, mod: 0, description: "plant monster (table 93)" },
+  { quantity: 1, dice: 4, mod: 0, description: "aquatic vermin (table 92)" },
+  {
+    quantity: 1,
+    dice: 4,
+    mod: 1,
+    description: "giant aquatic vermin (table 92)",
+  },
+  { quantity: 1, dice: 1, mod: 0, description: "drake" },
+  {
+    quantity: 1,
+    dice: 4,
+    mod: 0,
+    description: "drakes and d6 of young (viper stats)",
+  },
+  { quantity: 1, dice: 1, mod: 0, description: "baskilisk" },
+  { quantity: 1, dice: 4, mod: 1, description: "bog mummies (table 92)" },
+  { quantity: 1, dice: 2, mod: 0, description: "hydras" },
+  { quantity: 1, dice: 1, mod: 0, description: "kraken" },
+  { quantity: 1, dice: 4, mod: 1, description: "ghouls" },
+  { quantity: 1, dice: 4, mod: 1, description: "mycelids spawns and 1 ooze" },
+  {
+    quantity: 1,
+    dice: 6,
+    mod: 0,
+    description: "strange feral undeads (table 99)",
+  },
+];
+
 const iceSheetAnimals = [
   { quantity: 2, dice: 6, mod: 0, description: "wolves" },
   { quantity: 2, dice: 8, mod: 0, description: "mammoths" },
@@ -170,6 +326,41 @@ const iceSheetAnimals = [
   { quantity: 3, dice: 8, mod: 0, description: "reindeer" },
 ];
 
+const iceSheetWeird = [
+  { quantity: 2, dice: 6, mod: 0, description: "wolves" },
+  {
+    quantity: 1,
+    dice: 6,
+    mod: 0,
+    description: "wolves and d6 wolves of the ice sheet",
+  },
+  { quantity: 1, dice: 1, mod: 0, description: "flesh hulk" },
+  { quantity: 1, dice: 4, mod: 0, description: "ghouls and a spectre" },
+  { quantity: 1, dice: 1, mod: 0, description: "mimic" },
+  { quantity: 1, dice: 1, mod: 0, description: "beast of ice and snow" },
+  {
+    quantity: 1,
+    dice: 4,
+    mod: 0,
+    description: "beasts of ice and snow, and d6 animated stones",
+  },
+  { quantity: 1, dice: 1, mod: 0, description: "mimics" },
+  { quantity: 1, dice: 1, mod: 0, description: "shoggoth beneath the ice" },
+  { quantity: 1, dice: 4, mod: 0, description: "walking swarms" },
+  {
+    quantity: 1,
+    dice: 1,
+    mod: 0,
+    description: "tunneling terrible worm beneath the ice",
+  },
+  {
+    quantity: 1,
+    dice: 6,
+    mod: 0,
+    description: "strange feral undeads (table 99)",
+  },
+];
+
 const undergroundAnimals = [
   { quantity: 1, dice: 4, mod: 1, description: "cave lions" },
   { quantity: 1, dice: 6, mod: 1, description: "jackals" },
@@ -185,9 +376,124 @@ const undergroundAnimals = [
   { quantity: 1, dice: 4, mod: 0, description: "owls (birds of prey stats)" },
 ];
 
+const undergroundWeird = [
+  { quantity: 1, dice: 1, mod: 0, description: "shoggoth" },
+  { quantity: 1, dice: 4, mod: 1, description: "mycelids" },
+  { quantity: 2, dice: 6, mod: 0, description: "ghouls" },
+  { quantity: 2, dice: 6, mod: 0, description: "skeletal slaves" },
+  { quantity: 1, dice: 1, mod: 0, description: "pile of limbs" },
+  {
+    quantity: 1,
+    dice: 4,
+    mod: 0,
+    description: "animated tools and 1 homunculus",
+  },
+  { quantity: 1, dice: 1, mod: 0, description: "basilisk" },
+  { quantity: 2, dice: 4, mod: 0, description: "giant spiders and their webs" },
+  { quantity: 1, dice: 4, mod: 0, description: "vermin swarms (table 92)" },
+  { quantity: 1, dice: 4, mod: 1, description: "giant barnacles" },
+  {
+    quantity: 1,
+    dice: 4,
+    mod: 0,
+    description: "giant vermin and 1 vermin swarm (table 92)",
+  },
+  {
+    quantity: 1,
+    dice: 4,
+    mod: 1,
+    description: "giant vermin and 1 tunneling terrible worm",
+  },
+  {
+    quantity: 1,
+    dice: 4,
+    mod: 0,
+    description: "skeletal slaves and 1 tomb guardian",
+  },
+  { quantity: 1, dice: 4, mod: 0, description: "oozes" },
+  { quantity: 1, dice: 4, mod: 0, description: "giant amoebas" },
+  { quantity: 1, dice: 1, mod: 0, description: "fungoid plant monster" },
+  { quantity: 1, dice: 4, mod: 0, description: "mycelids and 1 shoggoth" },
+  { quantity: 1, dice: 4, mod: 0, description: "aquatic vermin and 1 kraken" },
+  {
+    quantity: 1,
+    dice: 4,
+    mod: 0,
+    description:
+      "morlock crawlers, d4 morlock watchers, d4 morlock whispers, morlock lurker",
+  },
+  { quantity: 1, dice: 4, mod: 0, description: "vargouilles and 1 mimic" },
+];
+
+const veryWeird = [
+  { quantity: 1, dice: 1, mod: 0, description: "shoggoth" },
+  { quantity: 1, dice: 4, mod: 0, description: "mycelids and 1 plant monster" },
+  { quantity: 1, dice: 1, mod: 0, description: "giant cave barnacle" },
+  { quantity: 1, dice: 4, mod: 0, description: "walking swarms" },
+  { quantity: 1, dice: 1, mod: 0, description: "magma beast" },
+  { quantity: 1, dice: 1, mod: 0, description: "pain engine" },
+  {
+    quantity: 1,
+    dice: 1,
+    mod: 0,
+    description: "homonculus of blood and sinew",
+  },
+  { quantity: 1, dice: 6, mod: 1, description: "children and 1 vampire" },
+  { quantity: 1, dice: 4, mod: 0, description: "stalkers and vampire spawn" },
+  {
+    quantity: 1,
+    dice: 1,
+    mod: 0,
+    description: "pile of limbs and 1 pain engine",
+  },
+  { quantity: 1, dice: 1, mod: 0, description: "mimic" },
+  {
+    quantity: 1,
+    dice: 4,
+    mod: 0,
+    description: "walking swarms and 1 giant spider",
+  },
+  {
+    quantity: 1,
+    dice: 4,
+    mod: 0,
+    description: "shamans and 1 chimera (standard)",
+  },
+  {
+    quantity: 2,
+    dice: 6,
+    mod: 0,
+    description: "crows (ptarmigan) and 1 ghoul",
+  },
+  {
+    quantity: 1,
+    dice: 4,
+    mod: 0,
+    description: "Neaderthal survivors and 1 intelligent plant monster",
+  },
+  {
+    quantity: 1,
+    dice: 4,
+    mod: 0,
+    description: "animated stones and 1 basilisk",
+  },
+  { quantity: 2, dice: 6, mod: 0, description: "hyenas and 1 spectre" },
+  { quantity: 3, dice: 6, mod: 0, description: "ghouls and 1 flesh hulk" },
+  { quantity: 1, dice: 4, mod: 1, description: "children and 1 giant amoeba" },
+  { quantity: 1, dice: 1, mod: 0, description: "colossus" },
+];
+
 function getRandomInt(max) {
   max = Math.floor(max);
   return Math.floor(Math.random() * max + 1);
+}
+
+function rollD2(count) {
+  let total = 0;
+  for (var i = 1; i <= count; i++) {
+    total += getRandomInt(2);
+  }
+  return total;
 }
 
 function rollD4(count) {
@@ -214,6 +520,14 @@ function rollD8(count) {
   return total;
 }
 
+function rollD10(count) {
+  let total = 0;
+  for (var i = 1; i <= count; i++) {
+    total += getRandomInt(10);
+  }
+  return total;
+}
+
 function rollD12(count) {
   let total = 0;
   for (var i = 1; i <= count; i++) {
@@ -233,30 +547,62 @@ function rollD20(count) {
 function chooseAnimalBasedOnLocation() {
   switch (parseInt(area)) {
     case 1:
-      chooseAnimal(20, plainsAnimals);
+      chooseEncounter(20, plainsAnimals);
       break;
     case 2:
-      chooseAnimal(20, forestAnimals);
+      chooseEncounter(20, forestAnimals);
       break;
     case 3:
-      chooseAnimal(20, wetlandAnimals);
+      chooseEncounter(20, wetlandAnimals);
       break;
     case 4:
-      chooseAnimal(20, highlandAnimals);
+      chooseEncounter(20, highlandAnimals);
       break;
     case 5:
-      chooseAnimal(20, coastAnimals);
+      chooseEncounter(20, coastAnimals);
       break;
     case 6:
-      chooseAnimal(12, iceSheetAnimals);
+      chooseEncounter(12, iceSheetAnimals);
       break;
     case 7:
-      chooseAnimal(12, undergroundAnimals);
+      chooseEncounter(12, undergroundAnimals);
+      break;
+    default:
+
+  }
+}
+
+function chooseWeirdBasedOnLocation() {
+  switch (parseInt(area)) {
+    case 1:
+      chooseEncounter(12, plainsWeird);
+      break;
+    case 2:
+      chooseEncounter(12, forestsWeird);
+      break;
+    case 3:
+      chooseEncounter(12, wetlandsWeird);
+      break;
+    case 4:
+      chooseEncounter(12, highlandsWeird);
+      break;
+    case 5:
+      chooseEncounter(12, iceSheetWeird);
+      break;
+    case 6:
+      chooseEncounter(12, iceSheetWeird);
+      break;
+    case 7:
+      chooseEncounter(20, undergroundWeird);
       break;
   }
 }
 
-function chooseAnimal(rows, table) {
+function chooseReallyWeird() {
+  chooseEncounter(20, veryWeird);
+}
+
+function chooseEncounter(rows, table) {
   if (rows == 12) {
     monsterRoll = rollD12(1);
   } else {
@@ -269,6 +615,10 @@ function chooseAnimal(rows, table) {
       encounterQty = 1 + encounter.mod;
       text = encounterQty + " " + encounter.description;
       break;
+    case 2:
+      encounterQty = rollD2(encounter.quantity) + encounter.mod;
+      text = encounterQty + " " + encounter.description;
+      break;
     case 4:
       encounterQty = rollD4(encounter.quantity) + encounter.mod;
       text = encounterQty + " " + encounter.description;
@@ -279,6 +629,14 @@ function chooseAnimal(rows, table) {
       break;
     case 8:
       encounterQty = rollD8(encounter.quantity) + encounter.mod;
+      text = encounterQty + " " + encounter.description;
+      break;
+    case 10:
+      encounterQty = rollD10(encounter.quantity) + encounter.mod;
+      text = encounterQty + " " + encounter.description;
+      break;
+    case 12:
+      encounterQty = rollD12(encounter.quantity) + encounter.mod;
       text = encounterQty + " " + encounter.description;
       break;
     case 20:
@@ -323,8 +681,10 @@ function chooseEncounterType(roll) {
     case 18:
     case 19:
       text = encounters[4].description;
+      chooseWeirdBasedOnLocation();
     case 20:
       text = encounters[5].description;
+      chooseReallyWeird();
       break;
     default:
       text = "error";
