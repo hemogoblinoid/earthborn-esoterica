@@ -483,6 +483,120 @@ const veryWeird = [
   { quantity: 1, dice: 1, mod: 0, description: "colossus" },
 ];
 
+const people = [
+  {
+    quantity: 1,
+    dice: 6,
+    mod: 0,
+    description: "stalkers and d4 gatherers making up a hunting party",
+  },
+  {
+    quantity: 1,
+    dice: 4,
+    mod: 0,
+    description: "stalkers and d4 trap-builders making up a scouting party",
+  },
+  {
+    quantity: 1,
+    dice: 4,
+    mod: 0,
+    description: "gatherers, d4 river-dwellers and d4 trap-builders",
+  },
+  {
+    quantity: 1,
+    dice: 1,
+    mod: 0,
+    description:
+      "warlord, d8 mammoth hunters and d6 stalkers making up a war-party",
+  },
+  {
+    quantity: 1,
+    dice: 1,
+    mod: 0,
+    description:
+      "mammoth hunter, 1 crafter, d4 children and d4 elders making up a family",
+  },
+  {
+    quantity: 1,
+    dice: 1,
+    mod: 0,
+    description:
+      "neanderthal fighter, 1 neanderthal survivor, d4 children and d4 sickly ones making up a family",
+  },
+  { quantity: 1, dice: 1, mod: 0, description: "hermit or an elder" },
+  {
+    quantity: 1,
+    dice: 4,
+    mod: 0,
+    description: "flame initiates or elders making up a strange cult",
+  },
+  { quantity: 1, dice: 4, mod: 0, description: "cannibals and d4 scavengers" },
+  { quantity: 1, dice: 6, mod: 0, description: "lost children" },
+  {
+    quantity: 1,
+    dice: 1,
+    mod: 0,
+    description: "lame initiate, d4 children and d6 elders",
+  },
+  {
+    quantity: 1,
+    dice: 1,
+    mod: 0,
+    description:
+      "Neanderthal survivor, d4 Neanderthal fighters and d4 Neanderthal brutes making up a hunting party",
+  },
+  {
+    quantity: 1,
+    dice: 1,
+    mod: 0,
+    description: "mammoth hunter, d4 stalkers and d6 trap-makers",
+  },
+  {
+    quantity: 1,
+    dice: 4,
+    mod: 0,
+    description: "merrows, d4 gargoyles and d4 gremlins",
+  },
+  {
+    quantity: 1,
+    dice: 1,
+    mod: 0,
+    description:
+      "Neanderthal chief, d4 Neanderthal survivors, d6 Neanderthal brutes and d6 Neanderthal fighter making up a war-party",
+  },
+  {
+    quantity: 1,
+    dice: 4,
+    mod: 0,
+    description: "gatherers, d4 trap-builders and d6 Neanderthal survivors",
+  },
+  {
+    quantity: 1,
+    dice: 6,
+    mod: 0,
+    description: "sickly ones, d4 children and a Neanderthal survivor",
+  },
+  {
+    quantity: 1,
+    dice: 1,
+    mod: 0,
+    description: "zealot, d4 thralls, and d4 mammoth hunters",
+  },
+  {
+    quantity: 1,
+    dice: 1,
+    mod: 0,
+    description: "inner flame mage, d4 flame initiates and d4 mystery cultist",
+  },
+  {
+    quantity: 1,
+    dice: 1,
+    mod: 0,
+    description:
+      "A warlord, d8+1 children, d6 elders, d4 crafters, d4 stalkers, d4 river-dwellers and d4 gatherer",
+  },
+];
+
 function getRandomInt(max) {
   max = Math.floor(max);
   return Math.floor(Math.random() * max + 1);
@@ -568,7 +682,6 @@ function chooseAnimalBasedOnLocation() {
       chooseEncounter(12, undergroundAnimals);
       break;
     default:
-
   }
 }
 
@@ -600,6 +713,10 @@ function chooseWeirdBasedOnLocation() {
 
 function chooseReallyWeird() {
   chooseEncounter(20, veryWeird);
+}
+
+function chooseReallyWeird() {
+  chooseEncounter(20, people);
 }
 
 function chooseEncounter(rows, table) {
@@ -664,6 +781,7 @@ function chooseEncounterType(roll) {
     case 11:
     case 12:
       text = encounters[1].description;
+      choosePeople();
       break;
     case 13:
     case 14:
