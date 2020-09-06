@@ -638,7 +638,7 @@ const highlandsWeird = [
       subRoll: null,
     },
   },
-  { quantity: 1, dice: 1, mod: 0, description: "baskilisk", subRoll: null },
+  { quantity: 1, dice: 1, mod: 0, description: "basilisk", subRoll: null },
   { quantity: 1, dice: 1, mod: 0, description: "hyrda", subRoll: null },
   { quantity: 1, dice: 1, mod: 0, description: "mimic", subRoll: null },
   { quantity: 1, dice: 4, mod: 0, description: "angry fossils", subRoll: null },
