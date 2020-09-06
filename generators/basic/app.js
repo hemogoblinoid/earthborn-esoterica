@@ -715,7 +715,7 @@ function chooseReallyWeird() {
   chooseEncounter(20, veryWeird);
 }
 
-function chooseReallyWeird() {
+function choosePeople() {
   chooseEncounter(20, people);
 }
 
