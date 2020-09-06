@@ -1909,14 +1909,14 @@ function chooseEncounterType(roll) {
     case 14:
       text = encounters[2].description;
       chooseAnimalBasedOnLocation();
-      text = text + " + Intelligent";
+      text = text + "<br/>The creatures in this encounter are intelligent.";
       break;
     case 15:
     case 16:
     case 17:
       text = encounters[3].description;
       chooseAnimalBasedOnLocation();
-      text = text + " + Chimera";
+      text = text + "<br/>The creatures in this encounter are chimeras.";
       break;
     case 18:
     case 19:
