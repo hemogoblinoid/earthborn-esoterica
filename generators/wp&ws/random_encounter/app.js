@@ -1183,7 +1183,7 @@ const veryWeird = [
       quantity: 1,
       dice: 1,
       mod: 0,
-      description: "vapire spawn",
+      description: "vampire spawn",
       subRoll: null,
     },
   },
