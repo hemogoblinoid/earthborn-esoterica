@@ -1632,7 +1632,7 @@ const people = [
     quantity: 1,
     dice: 1,
     mod: 0,
-    description: "A warlord",
+    description: "Warlord",
     subRoll: {
       quantity: 1,
       dice: 8,
@@ -1671,6 +1671,29 @@ const people = [
       },
     },
   },
+];
+
+const peopleActivities = [
+  "preparing for a hunt or skirmish.",
+  "recovering from an attack where some were injured.",
+  "butchering a dead animal.",
+  "taking a dead companion to be buried.",
+  "fleeing some horrible danger.",
+  "preparing for a religious ceremony.",
+  "in the middle of some ominous rite.",
+  "setting up a camp.",
+  "breaking up a camp.",
+  "eating and chatting around a campfire.",
+  "scavenging for equipment.",
+  "in the middle of a furious argument.",
+  "lost and confused.",
+  "lying low after doing something they shouldn't have.",
+  "looking to trade valuable items.",
+  "dangerously ill.",
+  "returning home after a long journey.",
+  "looking for a lost companion.",
+  "celebrating a recent victory, and probably intoxicated.",
+  "looking for somewhere safe and stable to make their home."
 ];
 
 function getRandomInt(max) {
@@ -1886,6 +1909,7 @@ function chooseSubEncounter(subEncounter) {
 }
 
 function chooseEncounterType(roll) {
+  let activityRoll = null;
   switch (roll) {
     case 1:
     case 2:
@@ -1897,33 +1921,29 @@ function chooseEncounterType(roll) {
     case 8:
     case 9:
     case 10:
-      text = encounters[0].description;
       chooseAnimalBasedOnLocation();
       break;
     case 11:
     case 12:
-      text = encounters[1].description;
       choosePeople();
+      activityRoll = rollD20(1);
+      text += "<br/>They are " + peopleActivities[activityRoll - 1];
       break;
     case 13:
     case 14:
-      text = encounters[2].description;
       chooseAnimalBasedOnLocation();
       text = text + "<br/>The creatures in this encounter are intelligent.";
       break;
     case 15:
     case 16:
     case 17:
-      text = encounters[3].description;
       chooseAnimalBasedOnLocation();
       text = text + "<br/>The creatures in this encounter are chimeras.";
       break;
     case 18:
     case 19:
-      text = encounters[4].description;
       chooseWeirdBasedOnLocation();
     case 20:
-      text = encounters[5].description;
       chooseReallyWeird();
       break;
     default:
