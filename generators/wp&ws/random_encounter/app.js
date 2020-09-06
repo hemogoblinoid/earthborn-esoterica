@@ -1934,7 +1934,7 @@ function chooseEncounterType(roll) {
 }
 
 function presentText(text) {
-  var mainContainer = document.getElementById("totalDiv");
+  var mainContainer = document.getElementById("encounterText");
   mainContainer.innerHTML = text;
 }
 
