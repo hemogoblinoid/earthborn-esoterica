@@ -846,7 +846,6 @@ const structureDescription = [[
           console.log(d2Result);
           appendListItem(assembleOverviewString(d2Result));
         }
-
       };
 
      
